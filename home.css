@@ -61,10 +61,68 @@ video{
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    margin: 35px;
+    margin: 20px;
 }
 
+.inicio{
+    color: #171fac;
+}
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #171fac;
+}
+
+.dropbtn {
+    background-color: black;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #00067e;
+    border-radius: 8px;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #00067e;
+    border-radius: 5px;
+  }
 
 
 /* banner */
