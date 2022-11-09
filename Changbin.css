@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat+Alternates:wght@300;400&family=Radio+Canada:wght@300&family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Gugi&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Delius+Unicase&family=Gugi&family=Jaldi:wght@700&family=Radio+Canada:wght@300&display=swap');
+
+
+* {
+    margin: 0
+}
+
+body{
+    background-color: rgb(10, 10, 10);
+}
+
+/* barra inicial */
+.header {
+    width: 100%;
+    position: fixed;
+    /* border: 3px solid green; */
+    top: 0;
+    left: 0;
+    height: 12%;
+    background: black;
+}
+
+.container1 {
+    /* border: 3px solid red; */
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+.container1 span img{
+    /* border: 3px solid green; */
+    width: 170px;
+    margin-top: 8%;
+}
+
+.header .container1 {
+    justify-content: space-between;
+}
+
+/* menu */
+.navbar {
+    /* border: 3px solid blue; */
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    list-style: none;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.inicio{
+    color: #171fac;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #171fac;
+}
+
+.dropbtn {
+    background-color: black;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #00067e;
+    border-radius: 8px;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #00067e;
+    border-radius: 5px;
+  }
+
+.Changbin{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 3%;
+    font-size: 40px;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    color: white;
+}
+
+.imagem{
+    /* border: 3px solid green; */
+    display: flex;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-bottom: 10%;
+    flex-direction: row;
+}
+
+.texto{
+    /* border: 3px solid blue; */
+    margin-left: 5%;
+    color: white;
+}
+.texto .titulo{
+    /* border: 3px solid orange; */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    font-size: 30px;
+    width: 30%;
+}
+
+
+.texto ul{
+    /* border: 3px solid; */
+    font-size: 20px;
+}
+
+.texto li{
+    margin-top: 5%;
+    list-style: none;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.curiosidade{
+    /* border: 3px solid; */
+    display: flex;
+}
+
+.curiosidade .container{
+    /* border: 3px solid red; */
+    display: flex;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+}
+
+.curiosidade p{
+    color: white;
+}
+
+.footer {
+    /* border: 3px solid green; */
+    display: flex;
+    margin: 20% 0 0 0;
+    width: 100%;
+    background: black;
+    background: linear-gradient(180deg, rgb(0, 0, 0)80.96%, rgb(9, 1, 116) 100%);
+}
+
+.footer .container {
+    /* border: 3px solid red; */
+    height: 130px;
+    width: 95%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .image {
+    /* border: 3px solid blue; */
+    display: flex;
+    margin: 4% 2% 4% 6%;
+}
+
+.image span img{
+    width: 78%;
+}
+
+.inicio h6 {
+    /* border: 3px solid orange; */
+    font-family: 'Radio Canada', sans-serif;
+    margin-bottom: 70px;
+    color: white;
+    opacity: 0.5;
+}
+
+
+.frase {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frase .f1 {
+    font-size: 25px;
+    color: white;
+}
+
+.frase .f2 {
+    font-size: 18px;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
