@@ -48,17 +48,29 @@ body{
     font-family: 'Do Hyeon', sans-serif;
     color: white;
     list-style: none;
-    width: 30%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    margin: 20px;
+    margin: 15px;
 
+}
+.usuario{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    margin-right: -20px;
+}
+
+.usuario p{
+    font-size: 15px;
 }
 
 .navbar img{
-    margin-left: -40px;
+    margin-left: 10%;
+    margin-right: 20%;
 }
 
 .inicio{
