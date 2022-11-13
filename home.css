@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Gugi&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Delius+Unicase&family=Gugi&family=Jaldi:wght@700&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
 * {
     margin: 0
@@ -131,39 +132,103 @@ a:hover{
 .banner {
     /* border: 3px solid blue; */
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)), url(acess/Vector\ 6.png);
+    background-image: url(acess/Group\ 24.png);
     padding: 90px 0;
-    height: 216vh;
+    height: 560vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.banner h1 {
-    font-family: 'Radio Canada', sans-serif;
-    color: white;
-    font-size: 90px;
-    margin-bottom: 0;
+.images{
+    /* border: 3px solid red; */
+    margin-left: 7%;
+    margin-right: 3%;
     margin-top: 5%;
-    margin-left: 8%;
+    display: flex;
+    flex-direction: row;
 }
 
-.banner .boom p {
-    font-family: 'Radio Canada', sans-serif;
-    color: white;
-    margin: 5%;
-    font-size: 22px;
-    margin-top: 2%;
-    margin-bottom: 8%;
+.text{
+    /* border: 3px solid yellow; */
+    display: flex;
+    margin-left: 3%;
+    font-size: 100px;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
-.banner .history p {
-    font-family: 'Radio Canada', sans-serif;
-    color: white;
-    margin: 5%;
-    font-size: 22px;
-    margin-top: 2%;
-    margin-bottom: 10%;
+.decoration{
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+}
+  
+.info{
+    /* border: 3px solid blue; */
+    font-size: 40px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+    margin-left: 2%;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.images2{
+    /* border: 3px solid red; */
+    margin-left: 7%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.images1{
+    /* border: 3px solid red; */
+    margin-top: 10%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text1{
+    /* border: 3px solid yellow; */
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    color: aliceblue;
+    margin-right: 3%;
+    margin-top: 10%;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.decoration1{
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+    margin-left: 0;
+    margin-top: 10%;
+}
+  
+.info1{
+    /* border: 3px solid blue; */
+    font-size: 40px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.information{
+    margin-left: 4%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -175,7 +240,7 @@ a:hover{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-
+    margin-top: 20%;
 }
 
 .boxes .container {
@@ -215,7 +280,6 @@ a:hover{
 
 
 
-
 /* musicas */
 .album {
     /* border: 3px solid red; */
@@ -233,7 +297,47 @@ a:hover{
     border: 5px solid black;
     overflow-y: hidden;
     overflow-x: scroll;
+    
 }
+
+
+
+
+.album .container::-webkit-scrollbar {
+  width: 17px;
+  height: 17px;
+}
+.album .container::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.album .container::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 4px;
+}
+.album .container::-webkit-scrollbar-thumb:hover {
+  background: #251268;
+}
+.album .container::-webkit-scrollbar-thumb:active {
+  background: #140f57;
+}
+.album .container::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+.album .container::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+.album .container::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+.album .container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 
 .album .container h1 {
     /* border: 3px solid orange; */
