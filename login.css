@@ -4,6 +4,7 @@
 }
 
 .cadastro {
+    /* border: 3px solid green; */
     display: flex;
     background-image: url(acess/Prancheta\ 3\ 1\(1\).png);
     height: 760px;
@@ -22,7 +23,7 @@
 
 .box {
     /* border: 3px solid black; */
-    margin-top: 10%;
+    margin-top: 25%;
     margin-bottom: 10%;
     text-align: center;
     padding: 20%;
@@ -32,7 +33,7 @@
     /* border: 3px solid; */
     display: flex;
     justify-content: center;
-    margin-top: -10%;
+    margin-top: -30%;
     margin-bottom: 10%;
     width: 100%;
     font-size: 50px;
@@ -53,6 +54,27 @@
     margin-top: 10%;
 }
 
+.box .campo3 {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.box .campo4 {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.box .campo5 {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
 .box h6 {
     /* border: 3px solid red; */
     display: flex;
@@ -61,25 +83,37 @@
     opacity: 0.7;
 }
 
-a{
+.box h6 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-size: 11px;
 }
 
-a:hover{
+.box h6 a:hover{
     color: #171fac;
+    text-decoration: underline;
 }
-
 
 button {
     /* border: 3px solid yellow; */
     margin-top: 10%;
-    width: 100px;
+    width: 30%;
     height: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: #171fac;
     color: white;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 7px;
+    border: none;
+    font-size: 17px;
+}
+
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button:hover{
+    background: rgb(0,3,255);
+background: linear-gradient(0deg, #171fac 0%, #353fff 100%);
 }
 
 .box input {
@@ -88,8 +122,15 @@ button {
     border-left: none;
     border-right: none;
     height: 35px;
-    padding-top: 15px;
+    width: 100%;
+    padding-top: 5px;
     padding-left: 10px;
     border-color: black;
     background-color: white;
+    font-size: 20px;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
