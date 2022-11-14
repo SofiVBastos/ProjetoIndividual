@@ -300,9 +300,6 @@ a:hover{
     
 }
 
-
-
-
 .album .container::-webkit-scrollbar {
   width: 17px;
   height: 17px;
@@ -348,6 +345,7 @@ a:hover{
     font-size: 80px;
 }
 
+
 .musica {
     /* border: 3px solid purple; */
     width: 100%;
@@ -369,11 +367,11 @@ a:hover{
 }
 
 .musica img {
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
-.musica :hover {
-    transform: scale(1.1);
+.musica img:hover {
+    transform: scale(1.2);
 }
 
 .musica h2 {
@@ -410,19 +408,11 @@ a:hover{
 .container .image {
     /* border: 3px solid blue; */
     display: flex;
-    margin: 4% 2% 4% 6%;
+    margin: 4% 0% 4% 6%;
 }
 
 .image span img{
     width: 78%;
-}
-
-.inicio h6 {
-    /* border: 3px solid orange; */
-    font-family: 'Radio Canada', sans-serif;
-    margin-bottom: 70px;
-    color: white;
-    opacity: 0.5;
 }
 
 
@@ -431,6 +421,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: -10%;
 }
 
 .frase .f1 {

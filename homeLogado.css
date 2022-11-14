@@ -17,7 +17,7 @@
     /* border: 3px solid green; */
     top: 0;
     left: 0;
-    height: 12%;
+    height: 12% auto;
     background: black;
     z-index: 2000;
 }
@@ -71,7 +71,7 @@ video{
     display: flex;
     flex-direction: column;
     margin-top: -5px;
-    margin-right: -20px;
+    margin-right: -5% auto;
 }
 
 .usuario p{
@@ -379,11 +379,11 @@ a:hover{
 }
 
 .musica img {
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
-.musica :hover {
-    transform: scale(1.1);
+.musica img:hover {
+    transform: scale(1.2);
 }
 
 .musica h2 {
@@ -393,7 +393,6 @@ a:hover{
     margin-top: 6%;
     margin-bottom: 8%;
 }
-
 
 
 
@@ -427,20 +426,13 @@ a:hover{
     width: 78%;
 }
 
-.inicio h6 {
-    /* border: 3px solid orange; */
-    font-family: 'Radio Canada', sans-serif;
-    margin-bottom: 70px;
-    color: white;
-    opacity: 0.5;
-}
-
 
 .frase {
     /* border: 3px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: -15%;
 }
 
 .frase .f1 {
