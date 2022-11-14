@@ -10,18 +10,20 @@
     margin: 0
 }
 
-body{
+body {
     background-color: rgb(10, 10, 10);
 }
 
+/* /////////////////////////////////// */
 /* barra inicial */
+/* /////////////////////////////////// */
 .header {
     width: 100%;
     position: fixed;
     /* border: 3px solid green; */
     top: 0;
     left: 0;
-    height: 12%;
+    height: 12% auto;
     background: black;
 }
 
@@ -32,7 +34,7 @@ body{
     display: flex;
 }
 
-.container1 span img{
+.container1 span img {
     /* border: 3px solid green; */
     width: 170px;
     margin-top: 8%;
@@ -42,7 +44,9 @@ body{
     justify-content: space-between;
 }
 
+/* /////////////////////////////////// */
 /* menu */
+/* /////////////////////////////////// */
 .navbar {
     /* border: 3px solid blue; */
     font-family: 'Do Hyeon', sans-serif;
@@ -56,33 +60,34 @@ body{
     margin: 15px;
 
 }
-.usuario{
+
+.usuario {
     /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
     margin-top: -5px;
-    margin-right: -20px;
+    margin-right: -5% auto;
 }
 
-.usuario p{
+.usuario p {
     font-size: 15px;
 }
 
-.navbar img{
+.navbar img {
     margin-left: 10%;
     margin-right: 20%;
 }
 
-.inicio{
+.inicio {
     color: #171fac;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+a:hover {
     color: #171fac;
 }
 
@@ -94,115 +99,177 @@ a:hover{
     font-size: 20px;
     border: none;
     cursor: pointer;
-  }
+}
 
-  
-  .dropdown {
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #000000;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 8px;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     background-color: #00067e;
     border-radius: 8px;
 }
-  
-  .dropdown:hover .dropdown-content {
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
+}
+
+.dropdown:hover .dropbtn {
     background-color: #00067e;
     border-radius: 5px;
-  }
+}
 
-.Bangchan{
+
+/* /////////////////////////////////// */
+.Bangchan {
     /* border: 3px solid red; */
     display: flex;
     justify-content: center;
     margin-top: 10%;
     padding: 3%;
     font-size: 40px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     text-decoration: underline;
     color: white;
 }
 
-.imagem{
+.imagem {
     /* border: 3px solid green; */
     display: flex;
-    margin-left: 22%;
-    margin-right: 22%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 10%;
     flex-direction: row;
 }
 
-.texto{
+.texto {
     /* border: 3px solid blue; */
+    margin-top: 6%;
     margin-left: 5%;
+    margin-bottom: 5%;
     color: white;
+
 }
-.texto .titulo{
+
+.texto .titulo {
     /* border: 3px solid orange; */
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    font-size: 30px;
-    width: 30%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+    font-size: 50px;
+    width: 40%;
 }
 
 
-.texto ul{
+.texto ul {
     /* border: 3px solid; */
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px;
 }
 
-.texto li{
-    margin-top: 5%;
+.texto li {
+    margin-top: 2%;
     list-style: none;
+    display: flex;
+    margin-left: 0%;
 }
 
-.line{
+
+/* /////////////////////////////////// */
+/* Informações */
+/* /////////////////////////////////// */
+.line {
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
-.curiosidade{
+.biografia {
     /* border: 3px solid; */
     display: flex;
 }
 
-.curiosidade .container{
+.biografia .container {
     /* border: 3px solid red; */
     display: flex;
     width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
-.curiosidade p{
+.conteudo {
+    /* border: 3px solid blue; */
+    font-size: 60px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo h3 {
+    /* border: 3px solid red; */
+    margin-bottom: 3%;
+}
+
+.biografia .bio p {
+    color: white;
+    font-size: 30px;
+}
+
+/* /////////////////////////////////// */
+/* /////////////////////////////////// */
+.career {
+    /* border: 3px solid yellow; */
+    display: flex;
+}
+
+.carreira {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 3%;
+    font-size: 40px;
     color: white;
 }
 
+.bc {
+    /* border: 3px solid green; */
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: row;
+}
+
+.info {
+    /* border: 3px solid blue; */
+    margin-left: 5%;
+    color: white;
+    font-size: 21px;
+    width: 80%;
+}
+
+
+/* /////////////////////////////////// */
+/* /////////////////////////////////// */
 .footer {
     /* border: 3px solid green; */
     display: flex;
@@ -228,7 +295,7 @@ a:hover{
     margin: 4% 2% 4% 6%;
 }
 
-.image span img{
+.image span img {
     width: 78%;
 }
 
@@ -246,6 +313,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: -15%;
 }
 
 .frase .f1 {
