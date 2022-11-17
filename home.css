@@ -10,6 +10,7 @@
     margin: 0
 }
 
+
 /* barra inicial */
 .header {
     width: 100%;
@@ -19,7 +20,7 @@
     left: 0;
     height: 12%;
     background: black;
-    z-index: 2000;
+    z-index: 1000;
 }
 
 .container1 {
@@ -63,8 +64,7 @@ video{
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    margin: 20px 33px 20px 20px;
-
+    margin: 20px 30px 20px 20px;
 }
 
 .inicio{
@@ -90,7 +90,6 @@ a:hover{
     cursor: pointer;
   }
 
-  
   .dropdown {
     position: relative;
     display: inline-block;
