@@ -116,76 +116,142 @@ a:hover{
     border-radius: 5px;
   }
 
-.Hyujin{
+ /* /////////////////////////////////// *//* /////////////////////////////////// */
+ .Hyunjin {
     /* border: 3px solid red; */
     display: flex;
     justify-content: center;
     margin-top: 10%;
     padding: 3%;
     font-size: 40px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     text-decoration: underline;
     color: white;
 }
 
-.imagem{
+.imagem {
     /* border: 3px solid green; */
     display: flex;
-    margin-left: 22%;
-    margin-right: 22%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 10%;
     flex-direction: row;
 }
 
-.texto{
+.texto {
     /* border: 3px solid blue; */
-    margin-left: 5%;
+    margin-top: 6%;
+    margin-left: 1%;
+    margin-bottom: 5%;
     color: white;
+
 }
-.texto .titulo{
+
+.texto .titulo {
     /* border: 3px solid orange; */
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    font-size: 30px;
-    width: 30%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+    font-size: 50px;
+    width: 40%;
 }
 
 
-.texto ul{
+.texto ul {
     /* border: 3px solid; */
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px;
 }
 
-.texto li{
-    margin-top: 5%;
+.texto li {
+    margin-top: 2%;
     list-style: none;
+    display: flex;
+    margin-left: 0%;
 }
 
-.line{
+
+/* /////////////////////////////////// */
+/* Informações */
+/* /////////////////////////////////// */
+.line {
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
-.curiosidade{
-    /* border: 3px solid; */
+.line2 {
     display: flex;
+    justify-content: center;
+    margin-top: 5%;
 }
 
-.curiosidade .container{
+.biografia {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+}
+
+.biografia .container {
     /* border: 3px solid red; */
     display: flex;
     width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 20px;
 }
 
-.curiosidade p{
+.conteudo {
+    /* border: 3px solid blue; */
+    font-size: 60px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo h3 {
+    /* border: 3px solid red; */
+    margin-bottom: 3%;
+}
+
+.biografia .bio p {
+    color: white;
+    font-size: 30px;
+}
+
+/* /////////////////////////////////// */
+/* /////////////////////////////////// */
+.career {
+    /* border: 3px solid yellow; */
+    display: flex;
+}
+
+.carreira {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 3%;
+    font-size: 40px;
     color: white;
 }
 
+.bc {
+    /* border: 3px solid green; */
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: row;
+}
+
+.info {
+    /* border: 3px solid blue; */
+    margin-left: 5%;
+    margin-top: 2%;
+    color: white;
+    font-size: 21px;
+    width: 80%;
+}
+
+
+/* /////////////////////////////////// *//* /////////////////////////////////// */
 .footer {
     /* border: 3px solid green; */
     display: flex;
@@ -229,6 +295,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: -15%;
 }
 
 .frase .f1 {
