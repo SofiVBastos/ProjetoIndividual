@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Gugi&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Delius+Unicase&family=Gugi&family=Jaldi:wght@700&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@200&family=Do+Hyeon&family=Julius+Sans+One&family=Ubuntu+Condensed&display=swap');
 
 * {
     margin: 0
@@ -170,7 +171,7 @@ a:hover{
     display: flex;
     align-items: center;
     margin-right: 7%;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .images2{
@@ -184,7 +185,6 @@ a:hover{
 .images1{
     /* border: 3px solid rgb(255, 255, 255); */
     margin-top: 3%;
-    margin-right: 4%;
     display: flex;
     flex-direction: row;
 }
@@ -196,6 +196,7 @@ a:hover{
     align-items: center;
     color: aliceblue;
     margin-top: 3%;
+    /* margin-left: 7%; */
     font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -212,9 +213,9 @@ a:hover{
     color: aliceblue;
     display: flex;
     align-items: center;
-    margin-left: 2%;
+    margin-left: 9%;
     margin-top: 3%;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .information{
@@ -257,10 +258,10 @@ a:hover{
     color: aliceblue;
     display: flex;
     align-items: center;
-    margin-right: 5%;
+    margin-right: 4%;
     margin-left: 2%;
     margin-top: 3%;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Bebas Neue', cursive;
 }
 
 
