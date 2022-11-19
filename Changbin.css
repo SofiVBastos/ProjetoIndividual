@@ -4,13 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Gugi&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Delius+Unicase&family=Gugi&family=Jaldi:wght@700&family=Radio+Canada:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Do+Hyeon&family=Julius+Sans+One&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Do+Hyeon&family=Doppio+One&family=Julius+Sans+One&family=Rambla&family=Rubik+Mono+One&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Convergence&family=Do+Hyeon&family=Doppio+One&family=Julius+Sans+One&family=Rambla&family=Rubik+Mono+One&family=Ubuntu+Condensed&display=swap');
 
 * {
     margin: 0
 }
 
-body{
+body {
     background-color: rgb(10, 10, 10);
 }
 
@@ -32,7 +34,7 @@ body{
     display: flex;
 }
 
-.container1 span img{
+.container1 span img {
     /* border: 3px solid green; */
     width: 170px;
     margin-top: 8%;
@@ -53,19 +55,19 @@ body{
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    margin: 20px 33px 20px 20px;
+    margin: 20px 30px 20px 20px;
 }
 
-.inicio{
+.inicio {
     color: #171fac;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+a:hover {
     color: #171fac;
 }
 
@@ -77,46 +79,47 @@ a:hover{
     font-size: 20px;
     border: none;
     cursor: pointer;
-  }
+}
 
-  
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #000000;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 8px;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     background-color: #00067e;
     border-radius: 8px;
 }
-  
-  .dropdown:hover .dropdown-content {
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
+}
+
+.dropdown:hover .dropbtn {
     background-color: #00067e;
     border-radius: 5px;
-  }
+}
 
-  .Changbin {
+
+/* //////////////////////////////////////////////// */
+.Changbin {
     /* border: 3px solid red; */
     display: flex;
     justify-content: center;
@@ -143,7 +146,6 @@ a:hover{
     margin-left: 1%;
     margin-bottom: 5%;
     color: white;
-
 }
 
 .texto .titulo {
@@ -152,6 +154,7 @@ a:hover{
     margin-left: 15%;
     font-size: 50px;
     width: 40%;
+    font-family: 'Doppio One', sans-serif;
 }
 
 
@@ -166,6 +169,8 @@ a:hover{
     list-style: none;
     display: flex;
     margin-left: 0%;
+    font-size: 20px;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 
@@ -178,17 +183,23 @@ a:hover{
     margin-bottom: 5%;
 }
 
-.biografia {
-    /* border: 3px solid; */
+.line2 {
     display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.biografia {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
 }
 
 .biografia .container {
     /* border: 3px solid red; */
     display: flex;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 5%;
+    margin-left: 2%;
 }
 
 .conteudo {
@@ -198,16 +209,19 @@ a:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .conteudo h3 {
     /* border: 3px solid red; */
     margin-bottom: 3%;
+    font-family: 'Convergence', sans-serif;
 }
 
 .biografia .bio p {
     color: white;
     font-size: 30px;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 /* /////////////////////////////////// */
@@ -227,6 +241,10 @@ a:hover{
     color: white;
 }
 
+.career h1{
+    font-family: 'Convergence', sans-serif;
+}
+
 .bc {
     /* border: 3px solid green; */
     display: flex;
@@ -238,58 +256,17 @@ a:hover{
 .info {
     /* border: 3px solid blue; */
     margin-left: 5%;
+    margin-top: 3%;
     color: white;
-    font-size: 21px;
+    font-size: 20px;
     width: 80%;
+    font-family: 'Rambla', sans-serif;
 }
+
 
 
 /* /////////////////////////////////// */
 /* /////////////////////////////////// */
-
-.curiosity {
-    /* border: 3px solid yellow; */
-    display: flex;
-    justify-content: center;
-}
-
-.curiosidade {
-    /* border: 3px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    margin-top: 10%;
-    font-size: 40px;
-    color: white;
-}
-
-.ladinho{
-    /* border: 3px solid green; */
-    display: flex;
-    flex-direction: row;
-}
-
-.cr1 {
-    /* border: 3px solid red; */
-    color: white;
-    margin-right: 10%;
-    margin-left: 5%;
-    width: 50%;
-    font-size: 20px;
-}
-
-.cr2 {
-    /* border: 3px solid blue; */
-    color: white;
-    width: 50%;
-    font-size: 20px;
-    margin-right: 5%;
-}
-
-
-
-/* /////////////////////////////////// *//* /////////////////////////////////// */
 .footer {
     /* border: 3px solid green; */
     display: flex;
@@ -315,7 +292,7 @@ a:hover{
     margin: 4% 2% 4% 6%;
 }
 
-.image span img{
+.image span img {
     width: 78%;
 }
 

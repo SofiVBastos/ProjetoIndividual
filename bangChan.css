@@ -4,7 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Gugi&family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Delius+Unicase&family=Gugi&family=Jaldi:wght@700&family=Radio+Canada:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Do+Hyeon&family=Julius+Sans+One&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Do+Hyeon&family=Julius+Sans+One&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Do+Hyeon&family=Doppio+One&family=Julius+Sans+One&family=Rambla&family=Rubik+Mono+One&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Convergence&family=Do+Hyeon&family=Doppio+One&family=Julius+Sans+One&family=Rambla&family=Rubik+Mono+One&family=Ubuntu+Condensed&display=swap');
 
 * {
     margin: 0
@@ -141,10 +144,10 @@ a:hover{
 .texto {
     /* border: 3px solid blue; */
     margin-top: 6%;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-bottom: 5%;
     color: white;
-
+    
 }
 
 .texto .titulo {
@@ -153,6 +156,7 @@ a:hover{
     margin-left: 15%;
     font-size: 50px;
     width: 40%;
+    font-family: 'Doppio One', sans-serif;
 }
 
 
@@ -167,6 +171,8 @@ a:hover{
     list-style: none;
     display: flex;
     margin-left: 0%;
+    font-size: 20px;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 
@@ -179,17 +185,23 @@ a:hover{
     margin-bottom: 5%;
 }
 
-.biografia {
-    /* border: 3px solid; */
+.line2 {
     display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.biografia {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
 }
 
 .biografia .container {
     /* border: 3px solid red; */
     display: flex;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 5%;
+    margin-left: 2%;
 }
 
 .conteudo {
@@ -199,16 +211,20 @@ a:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .conteudo h3 {
     /* border: 3px solid red; */
     margin-bottom: 3%;
+    font-family: 'Convergence', sans-serif;
 }
 
 .biografia .bio p {
     color: white;
     font-size: 30px;
+    font-family: 'Asap Condensed', sans-serif;
+
 }
 
 /* /////////////////////////////////// */
@@ -227,6 +243,9 @@ a:hover{
     font-size: 40px;
     color: white;
 }
+.career h1{
+    font-family: 'Convergence', sans-serif;
+}
 
 .bc {
     /* border: 3px solid green; */
@@ -240,8 +259,9 @@ a:hover{
     /* border: 3px solid blue; */
     margin-left: 5%;
     color: white;
-    font-size: 21px;
+    font-size: 20px;
     width: 80%;
+    font-family: 'Rambla', sans-serif;
 }
 
 
