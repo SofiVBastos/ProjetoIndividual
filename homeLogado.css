@@ -11,6 +11,7 @@
     margin: 0
 }
 
+
 /* barra inicial */
 .header {
     width: 100%;
@@ -40,8 +41,6 @@
     justify-content: space-between;
 }
 
-
-
 /* video */
 .parallax {
     /* /* border: 3px solid yellow; */
@@ -65,24 +64,25 @@ video{
     justify-content: space-between;
     font-size: 20px;
     margin: 15px;
-
 }
+.navbar li{
+margin-top: 5px;
+}
+
 .usuario{
     /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
-    margin-top: -5px;
-    margin-right: -5% auto;
+    align-items: center;
+    margin-top: 1px;
 }
 
 .usuario p{
     font-size: 15px;
+    margin-top: 10%;
+    margin-bottom: -7%;
 }
 
-.navbar img{
-    margin-left: 10%;
-    margin-right: 20%;
-}
 
 .inicio{
     color: #171fac;
@@ -105,7 +105,9 @@ a:hover{
     font-size: 20px;
     border: none;
     cursor: pointer;
+    margin-top: 5px;
   }
+
 
   
   .dropdown {
