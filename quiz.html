@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container1">
+            <span><img src="acess/Meu projeto 2.png"></span>
+            <ul class="navbar">
+                <li>
+                    <a href="homelogado.html">Home</a>
+                </li>
+                <div class="dropdown">
+                    <button class="dropbtn">Membros</button>
+
+                    <div class="dropdown-content">
+                        <a href="bangChanlogado.html">Bang Chan</a>
+
+                        <a href="Leeknowlogado.html">Lee Know</a>
+
+                        <a href="Changbinlogado.html">Changbin</a>
+
+                        <a href="Hyunjinlogado.html">Hyujin</a>
+
+                        <a href="Hanlogado.html">Han</a>
+
+                        <a href="Felixlogado.html">Felix</a>
+
+                        <a href="Seugminlogado.html">Seugmin</a>
+
+                        <a href="INlogado.html">IN</a>
+                    </div>
+                </div>
+
+                <li><a href="QUIZ.html">QUIZ</a></li>
+
+                <li>
+                    <a href="home.html">Logout</a>
+                </li>
+
+                <div class="usuario">
+                    <img src="acess/user(4) 1.png" alt="" style="height:40px;">
+                    <p>nome usuario</p>
+
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="pergunta1">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>Questão 1 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quem é o lider do grupo?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(0,'Lee Know')" id="resposta_errada" class="button-28" role="button">Lee Know</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(0,'Bang Chan')" id="resposta_certa" class="button-28" role="button">Bang Chan</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(0,'ChangBin')" id="resposta_errada" class="button-28" role="button">ChangBin</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(0,'Felix')" id="resposta_errada" class="button-28" role="button">Felix</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="pergunta2" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>2 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quantas musicas tem no álbum Noeasy?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(1,'10')" id="resposta_errada" class="button-28" role="button">10</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(1,'15')" id="resposta_errada" class="button-28" role="button">15</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(1,'6')" id="resposta_errada" class="button-28" role="button">6</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(1,'14')" id="resposta_certa" class="button-28" role="button">14</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="pergunta3" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>3 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quais membros formam o 3RACHA?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(2,'Bang Chan, Lee Know')" id="resposta_errada" class="button-28" role="button">Bang Chan, Lee Know
+                            Hyujin</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(2,'ChangBin, IN, Seugmin')" id="resposta_errada" class="button-28" role="button">ChangBin, IN, Seugmin</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(2,'Bang Chan, Han, ChangBin')" id="resposta_certa" class="button-28" role="button">Bang Chan, Han, ChangBin</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(2,'Felix, Lee Know, Han')" id="resposta_errada" class="button-28" role="button">Felix, Lee Know, Han</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pergunta4" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>4 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quando o Stray Kids debutou?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(3,'25/03/2017')" id="resposta_certa" class="button-28" role="button">25/03/2017</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(3,'14/05/2018')" id="resposta_errada" class="button-28" role="button">14/05/2018</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(3,'25/03/2018')" id="resposta_errada" class="button-28" role="button">25/03/2018</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(3,'20/09/2017')" id="resposta_errada" class="button-28" role="button">20/09/2017</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pergunta5" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>5 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quantas membros tem no grupo?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(4,'6')" id="resposta_errada" class="button-28" role="button">6</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(4,'9')" id="resposta_errada" class="button-28" role="button">9</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(4,'8')" id="resposta_certa" class="button-28" role="button">8</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(4,'7')" id="resposta_errada" class="button-28" role="button">7</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pergunta6" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>6 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quais membros do grupo não tem irmãos?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(5,'2ang Chan, Han')" id="resposta_errada" class="button-28" role="button">Bang Chan, Han</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(5,'Lee Know, Hyujin')" id="resposta_certa" class="button-28" role="button">Lee Know, Hyujin</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(5,'IN, Felix')" id="resposta_errada" class="button-28" role="button">IN, Felix</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(5,'Seugmin, ChangBin')" id="resposta_errada" class="button-28" role="button">Seugmin, ChangBin</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pergunta7" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>7 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Qual do álbum que fez o Stray kids ficar famoso?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(6,'IN Life')" id="resposta_errada" class="button-28" role="button">IN Life</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(6,'GO LIVE')" id="resposta_errada" class="button-28" role="button">Go Live</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(6,'Noeasy')" iid="resposta_certa" class="button-28" role="button">Noeasy</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(6,'All IN')" id="resposta_errada" class="button-28" role="button">All IN</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pergunta8" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>8 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quais são os valores do Stray Kids?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(7,'Apoio, Cooperação, Sacrificio, Criatividade, Determinação, Paixão')" id="resposta_certa" class="button-28" role="button">Apoio, Cooperação, Sacrificio, Criatividade, Determinação, Paixão</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(7,'Agilidade, Conexão, Dever, Foco,Honra, Esperança')" id="resposta_errada" class="button-28" role="button">Agilidade, Conexão, Dever, Foco,Honra, Esperança</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(7,'Lealdade, Lógica, Harmonia, Otimismo, Sucesso, Respeito')" id="resposta_errada" class="button-28" role="button">Lealdade, Lógica, Harmonia, Otimismo, Sucesso, Respeito</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(7,'Verdade, Diversão, Calma, Cuidado, Aventura, Ambição')" id="resposta_errada" class="button-28" role="button">Verdade, Diversão, Calma, Cuidado, Aventura, Ambição</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pergunta9" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>9 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Quem é o maknae (mais novo) do grupo?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(8,'Felix')" id="resposta_errada" class="button-28" role="button">Felix</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(8,'Seugmin')" id="resposta_errada" class="button-28" role="button">Seugmin</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(8,'IN')" id="resposta_certa" class="button-28" role="button">IN</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(8,'Hyujin')" id="resposta_errada" class="button-28" role="button">Hyujin</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pergunta10" style="display: none;">
+        <div class="banner">
+            <div class="container">
+                <div class="titulo">
+                    <h1>10 - 10</h1>
+                </div>
+                <div class="questao">
+                    <h3>Qual foi o nome do programa da Mnet que o Stray kids competiu contra outros grupos?</h3>
+                </div>
+                <div class="pergunta">
+
+                    <div class="linha">
+                        <button onclick="vericar_resposta(9,'Stray Kids')" id="resposta_errada" class="button-28" role="button">Stray Kids</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(9,'Kingdom')" id="resposta_certa" class="button-28" role="button">Kingdom</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(9,'Produce')" id="resposta_errada" class="button-28" role="button">Produce</button>
+                    </div>
+                    <div class="linha">
+                        <button onclick="vericar_resposta(9,'Road to Kingdom')" id="resposta_errada" class="button-28" role="button">Road to Kingdom</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="image">
+                <span><img src="acess/Meu projeto 2.png" alt=""></span>
+            </div>
+
+            <div class="frase">
+                <span class="f1">Stray Kids Everywhere All Around The Wolrd</span>
+                <span class="f2">Site feito de fã para fãns</span>
+            </div>
+            <div class="frase2">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="questoes.js"></script>
+    <script src="scripit.js"></script>
+</body>
+
+</html>
