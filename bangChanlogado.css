@@ -14,13 +14,11 @@
     margin: 0
 }
 
-body {
+body{
     background-color: rgb(10, 10, 10);
 }
 
-/* /////////////////////////////////// */
-/* barra inicial */
-/* /////////////////////////////////// */
+/* /////////////////////////////////// *//* barra inicial *//* /////////////////////////////////// */ 
 .header {
     width: 100%;
     position: fixed;
@@ -29,6 +27,7 @@ body {
     left: 0;
     height: 12% auto;
     background: black;
+    z-index: 2000;
 }
 
 .container1 {
@@ -38,7 +37,7 @@ body {
     display: flex;
 }
 
-.container1 span img {
+.container1 span img{
     /* border: 3px solid green; */
     width: 170px;
     margin-top: 8%;
@@ -48,9 +47,7 @@ body {
     justify-content: space-between;
 }
 
-/* /////////////////////////////////// */
 /* menu */
-/* /////////////////////////////////// */
 .navbar {
     /* border: 3px solid blue; */
     font-family: 'Do Hyeon', sans-serif;
@@ -62,36 +59,36 @@ body {
     justify-content: space-between;
     font-size: 20px;
     margin: 15px;
-
+}
+.navbar li{
+margin-top: 5px;
 }
 
-.usuario {
+.usuario{
     /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
-    margin-top: -5px;
-    margin-right: -5% auto;
+    align-items: center;
+    margin-top: 1px;
 }
 
-.usuario p {
+.usuario p{
     font-size: 15px;
+    margin-top: 10%;
+    margin-bottom: -7%;
 }
 
-.navbar img {
-    margin-left: 10%;
-    margin-right: 20%;
-}
 
-.inicio {
+.inicio{
     color: #171fac;
 }
 
-a {
+a{
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+a:hover{
     color: #171fac;
 }
 
@@ -103,44 +100,47 @@ a:hover {
     font-size: 20px;
     border: none;
     cursor: pointer;
-}
+    margin-top: 5px;
+  }
 
 
-.dropdown {
+  
+  .dropdown {
     position: relative;
     display: inline-block;
-}
-
-.dropdown-content {
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #000000;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 8px;
-}
-
-.dropdown-content a {
+  }
+  
+  .dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
-
-.dropdown-content a:hover {
+  }
+  
+  .dropdown-content a:hover {
     background-color: #00067e;
     border-radius: 8px;
 }
-
-.dropdown:hover .dropdown-content {
+  
+  .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropbtn {
+  }
+  
+  .dropdown:hover .dropbtn {
     background-color: #00067e;
     border-radius: 5px;
-}
+  }
+
 
 
 /* /////////////////////////////////// */
