@@ -39,11 +39,11 @@ const quizArray = [
         id: "6",
         questão: "Qual do álbum que fez o Stray kids ficar famoso?",
         opção: ["IN Life", "GO LIVE", "Noeasy", "All IN"],
-        orreta: "Noeasy",
+        correta: "GO LIVE",
     },
     {
         id: "7",
-        questão: "Quais são os valores do Stray Kids?",
+        questão: "Quais são os valores de um Idol?",
         opção: ["Apoio, Cooperação, Sacrificio, Criatividade, Determinação, Paixão,", "Agilidade, Conexão, Dever, Foco,Honra, Esperança", "Lealdade, Lógica, Harmonia, Otimismo, Sucesso, Respeito", "Verdade, Diversão, Calma, Cuidado, Aventura, Ambição"],
         correta: "Apoio, Cooperação, Sacrificio, Criatividade, Determinação, Paixão"
     },

@@ -1,5 +1,10 @@
 var pontos = 0;
 
+function start(){
+  inicio.style.display = "none"
+  pergunta1.style.display = "block"
+
+}
 
 function vericar_resposta(pergunta, resposta){
   var pergunta_atual = document.getElementById(`pergunta${pergunta+1}`)
@@ -19,5 +24,49 @@ function vericar_resposta(pergunta, resposta){
       proxPergunta.style.display = "block"
 
     }
+
   }
 }
+
+
+
+const ctx = document.getElementById('myChart');
+
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['1', '2', '3', '4', '5', '6'],
+    datasets: [{
+      label: 'Pontuação',
+      data: [12, 19, 3, 5, 2, 3],
+      backgroundColor: [
+        'rgba(144, 150, 255, 0.5)',
+        'rgba(144, 150, 255, 0.5)',
+        'rgba(144, 150, 255, 0.5)',
+        'rgba(144, 150, 255, 0.5)',
+        'rgba(144, 150, 255, 0.5)',
+        'rgba(144, 150, 255, 0.5)',
+        'rgba(144, 150, 255, 0.5)'
+      ],
+      borderColor: [
+        '#3e45ccd6',
+        '#3e45ccd6',
+        '#3e45ccd6',
+        '#3e45ccd6',
+        '#3e45ccd6',
+        '#3e45ccd6',
+        '#3e45ccd6'
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
