@@ -23,8 +23,9 @@ body{
     /* border: 3px solid green; */
     top: 0;
     left: 0;
-    height: 12%;
+    height: 12% auto;
     background: black;
+    z-index: 2000;
 }
 
 .container1 {
@@ -50,13 +51,31 @@ body{
     font-family: 'Do Hyeon', sans-serif;
     color: white;
     list-style: none;
-    width: 32%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    margin: 20px 30px 20px 20px;
+    margin: 15px;
 }
+.navbar li{
+margin-top: 5px;
+}
+
+.usuario{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.usuario p{
+    font-size: 15px;
+    margin-top: 10%;
+    margin-bottom: -7%;
+}
+
 
 .inicio{
     color: #171fac;
@@ -75,11 +94,13 @@ a:hover{
     background-color: black;
     font-family: 'Do Hyeon', sans-serif;
     color: white;
-    padding: 16px;
+    padding: 10px;
     font-size: 20px;
     border: none;
     cursor: pointer;
+    margin-top: 5px;
   }
+
 
   
   .dropdown {
@@ -118,8 +139,9 @@ a:hover{
     border-radius: 5px;
   }
 
+
  /* /////////////////////////////////// *//* /////////////////////////////////// */
- .Han {
+ .IN {
     /* border: 3px solid red; */
     display: flex;
     justify-content: center;
