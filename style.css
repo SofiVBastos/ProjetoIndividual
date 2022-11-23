@@ -138,6 +138,11 @@ a:hover {
 
 
 /* /////////////////////////////////// */
+
+
+
+
+
 .banner {
     /* border: 3px solid red; */
     display: flex;
@@ -146,25 +151,24 @@ a:hover {
 }
 
 .banner .container {
-    /* border: 3px solid rgb(0, 0, 62); */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     margin: 10% auto;
     width: 40%;
-    height: 600px;
-    background-color: rgba(144, 150, 255, 0.5);
-
+    height: 555px;
+    background-color: rgba(255, 255, 255, 0.945);
+    box-shadow: rgba(23, 27, 112, 0.4) -5px 5px, rgba(23, 27, 112, 0.3) -10px 10px, rgba(23, 27, 112, 0.2) -15px 15px, rgba(23, 27, 112, 0.1) -20px 20px, rgba(23, 27, 112, 0.05) -25px 25px;
 }
 
 .titulo {
     /* border: 3px solid green; */
     display: flex;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     font-size: 25px;
     justify-content: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #000000af;
+    background-color: #251268;
     color: white;
     height: 100px;
     align-items: center;
@@ -176,7 +180,7 @@ a:hover {
     /* border: 3px solid pink; */
     color: rgb(0, 0, 0);
     font-size: 24px;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
     margin-left: 5%;
     margin-right: 3%;
     display: flex;
@@ -203,24 +207,24 @@ a:hover {
 }
 
 .banner-- .container-- {
-    /* border: 3px solid blue; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     margin: 10% auto;
     width: 40%;
-    height: 570px;
-    background-color: rgba(144, 150, 255, 0.5);
+    height: 555px;
+    background-color: rgba(255, 255, 255, 0.945);
+    box-shadow: rgba(23, 27, 112, 0.4) -5px 5px, rgba(23, 27, 112, 0.3) -10px 10px, rgba(23, 27, 112, 0.2) -15px 15px, rgba(23, 27, 112, 0.1) -20px 20px, rgba(23, 27, 112, 0.05) -25px 25px;
 }
 
 .titulo-- {
     /* border: 3px solid green; */
     display: flex;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
     font-size: 25px;
     justify-content: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #000000af;
+    background-color: #251268;
     color: white;
     height: 100px;
     align-items: center;
@@ -285,10 +289,10 @@ a:hover {
 
 .button-28:hover {
     color: #fff;
-    background-color: #3f50d4a3;
+    background-color: #00108cd0;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
-    border: 2px solid #3e45ccd6;
+    border: 2px solid #141a90d6;
 }
 
 .button-28:active {
@@ -439,8 +443,8 @@ a:hover {
     margin: 10% auto;
     width: 40%;
     height: 555px;
-    background-color: rgba(144, 150, 255, 0.5);
-
+    background-color: rgba(255, 255, 255, 0.945);
+    box-shadow: rgba(23, 27, 112, 0.4) -5px 5px, rgba(23, 27, 112, 0.3) -10px 10px, rgba(23, 27, 112, 0.2) -15px 15px, rgba(23, 27, 112, 0.1) -20px 20px, rgba(23, 27, 112, 0.05) -25px 25px;
 }
 
 .titulo_ {
@@ -450,12 +454,12 @@ a:hover {
     margin-bottom: 5%;
     font-size: 25px;
     justify-content: center;
-    background-color: #000000af;
+    background-color: #251268;
     color: white;
-    height: 90px;
+    height: 100px;
     align-items: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
 }
 
 .questao_ {
@@ -480,66 +484,189 @@ a:hover {
 
 /* ////////////////////////////// pontuação ////////////////////////////////// */
 
-.pontuacao {
+.banner7 {
     /* border: 3px solid red; */
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+
 }
 
-.pontuacao .container {
-    /* border: 3px solid yellow; */
-    height: 500px;
+.banner7 .container7 {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin: 8% auto;
+    width: 60%;
+    height: 570px;
+    background-color: rgba(255, 255, 255, 0.945);
+    border-radius: 20px;
+}
+
+
+.titulo7 {
+    /* border: 3px solid green; */
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #251268;
+    color: white;
+    height: 190px;
+    align-items: center;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+.coluna7 {
+    /* border: 3px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200PX;
+    border-bottom: 5px solid #251268;
+}
+
+.posicao {
+    /* border: 3px solid red; */
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.posicao .container {
+    /* border: 3px solid blue; */
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-.resposta {
-    /* border: 3px solid green; */
-    width: 500px;
-    background-color: rgba(144, 150, 255, 0.5);
-    border-radius: 20px;
-}
-
-.tituloo {
-    font-size: 30px;
+.posicao1 .pergunta7 .linha7 {
+    border: 3px solid yellow;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    background-color: #000000af;
-    height: 100px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    justify-content: start;
+    height: 200px;
 }
 
-.nota {
+
+.nota7 {
     /* border: 3px solid orange; */
-    height: 400px;
+    height: 800px;
+
+    overflow-x: hidden;
 }
 
-.dados {
-    border: 3px solid #000000af;
+.nota7::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+.nota7::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.nota7::-webkit-scrollbar-thumb {
+    background: #251268;
+    border: 0px none #ffffff;
+    border-radius: 4px;
+}
+
+.nota7 .container7::-webkit-scrollbar-thumb:hover {
+    background: #251268;
+}
+
+.nota7::-webkit-scrollbar-thumb:active {
+    background: #140f57;
+}
+
+.nota7::-webkit-scrollbar-track {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+.nota7.container7::-webkit-scrollbar-track:hover {
+    background: #ffffff;
+}
+
+.nota7::-webkit-scrollbar-track:active {
+    background: #ffffff;
+}
+
+.nota7::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.dados7 {
+    /* border: 3px solid #000000af; */
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 5% auto;
-    height: 90px;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 1% auto;
+    height: 60px;
     color: rgb(0, 0, 0);
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
+    background-color: #251268;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.proximo {
+.dados6 {
+    /* border: 3px solid #000000af; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.separar1 {
+    /* border: 3px solid green; */
+    display: flex;
+    width: 37%;
+    justify-content: center;
+}
+
+
+.separar2 {
+    /* border: 3px solid green; */
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.separar3 {
+    /* border: 3px solid green; */
+    display: flex;
+    width: 35%;
+    justify-content: center;
+}
+
+.linha7 {
+    /* border: 3px solid yellow; */
+    font-size: 20px;
     display: flex;
     justify-content: end;
-
 }
+
+.conter {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-right: 2%;
+    margin-bottom: 3%;
+}
+
 
 /* CSS */
 .button-24 {
-    background: #231572;
+    background: #120076;
     border: 1px solid #000000;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
@@ -567,7 +694,7 @@ a:hover {
 .button-24:active {
     background-color: initial;
     background-position: 0 0;
-    color: #ffffff;
+    color: #1900a9;
 }
 
 .button-24:active {
@@ -581,7 +708,7 @@ a:hover {
     /* border: 3px solid red; */
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .grafico .container {
@@ -590,7 +717,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     height: 500px;
-    width: 70%;
 }
 
 .identificacao {
@@ -606,9 +732,8 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 600px;
-    width: 80%;
-
+    height: 700px;
+    width: 60%;
 }
 
 .dados_grafico {
@@ -626,6 +751,78 @@ a:hover {
     display: flex;
     justify-content: end;
     margin-top: 5%;
+}
+
+
+/* ///////////////////////////// comentario ///////////////////////// */
+
+.comentario {
+    /* border: 3px solid red; */
+    height: 400px;
+    margin: 10% 25% 10% 25%;
+}
+
+.comentario .container {
+    /* border: 3px solid blue; */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.tipo {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.umavez {
+    /* border: 3px solid green; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.title {
+    /* border: 3px solid orangered; */
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: white;
+    font-size: 20px;
+}
+
+.title input{
+    font-size: 20px;
+}
+
+.pose{
+/* border: 3px solid darkolivegreen; */
+display: flex;
+flex-direction: column;
+height: 200px;
+font-size: 20px;
+margin-top: 2%;
+}
+
+.pose textarea{
+    height: 200px;
+    font-size: 20px;
+}
+
+.description {
+    /* border: 3px solid mediumvioletred; */
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    color: white;
+    font-size: 20px;
 }
 
 /* ///////////////////////////////////////////////////// */

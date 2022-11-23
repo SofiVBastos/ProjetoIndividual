@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="kids icon" href="acess/image 26.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -419,55 +419,171 @@
         </div>
     </div>
 
-    <div class="pontuacao" id="pont" style="display: none;">
-        <div class="container">
-            <div class="resposta">
-                <div class="tituloo">
-                    <h1>Pontuação</h1>
+
+    <div id="pont" style="display: none;">
+        <div class="banner7">
+            <div class="container7">
+                <div class="titulo7">
+                    <h1>Top 10 Melhores Pontuações</h1>
                 </div>
-                <div class="nota">
-                    <div class="dados">
-                        <span>Acertos</span>
-                        <p>1</p>
-                    </div>
-                    <div class="dados">
-                        <span>Erros</span>
-                        <p>9</p>
-                    </div>
-                    <div class="dados">
-                        <span>Pontos</span>
-                        <p>10</p>
+                <div class="coluna7">
+                    <div class="posicao">
+                        <div class="container">
+                            <span>Rank</span>
+                        </div>
+                        <div class="container">
+                            <span>Nome</span>
+                        </div>
+                        <div class="container">
+                            <span>Pontuação</span>
+                        </div>
                     </div>
                 </div>
-                <div class="proximo">
-                    <button onclick="prox()" class="button-24" role="button">Próximo</button>
+
+
+                <div class="nota7">
+                    <div class="dados7">
+                        <div class="separar1">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar2">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar3">
+                            <div class="container">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dados6">
+                        <div class="separar1">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar2">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar3">
+                            <div class="container">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dados7">
+                        <div class="separar1">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar2">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar3">
+                            <div class="container">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dados6">
+                        <div class="separar1">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar2">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar3">
+                            <div class="container">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dados7">
+                        <div class="separar1">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar2">
+                            <div class="container">
+                                <span>Acertos</span>
+                            </div>
+                        </div>
+                        <div class="separar3">
+                            <div class="container">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="linha7">
+                    <div class="conter">
+                        <button onclick="prox()" class="button-24" role="button">Próximo</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="grafico" id="grafic" style="display: none;">
         <div class="container">
             <div class="organizar">
                 <div class="identificacao">
-                    <h1>Grafico geral</h1>
+                    <h1>Grafico de pontos por tentativa</h1>
                 </div>
                 <div class="dados_grafico">
                     <canvas id="myChart"></canvas>
                 </div>
                 <div class="proximo-">
-                    <button class="button-24" role="button">Próximo</button>
+                    <button onclick="next()" class="button-24" role="button">Próximo</button>
                 </div>
             </div>
         </div>
     </div>
-
+    </div>
 
     <div class="comentario" id="coments" style="display: none;">
         <div class="container">
-            <div class="">
-
+            <div class="tipo">
+                <h1>Comentário</h1>
+            </div>
+            <div class="umavez">
+                <h4>*Aviso: Você só pode comentar uma vez</h4>
+            </div>
+            <div class="title">
+                <h2>Titulo</h2>
+                <input name="titulo" id="titulo" maxlength="100" type="text">
+            </div>
+            <div class="description">
+                <div class="pose">
+                    <h2>Descrição</h2>
+                    <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
+                </div>
+                <div class="proximo-">
+                    <button onclick="send()" class="button-24" role="button">Enviar</button>
+                </div>
             </div>
         </div>
     </div>
