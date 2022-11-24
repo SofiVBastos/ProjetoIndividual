@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat+Alternates:wght@300;400&family=Radio+Canada:wght@300&family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Gugi&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Delius+Unicase&family=Gugi&family=Jaldi:wght@700&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@200&family=Do+Hyeon&family=Julius+Sans+One&family=Ubuntu+Condensed&display=swap');
+
+* {
+    margin: 0
+}
+
+
+/* barra inicial */
+.header {
+    width: 100%;
+    position: fixed;
+    /* border: 3px solid green; */
+    top: 0;
+    left: 0;
+    height: 12%;
+    background: black;
+    z-index: 1000;
+}
+
+.container1 {
+    /* border: 3px solid red; */
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+.container1 span img{
+    /* border: 3px solid green; */
+    width: 170px;
+    margin-top: 8%;
+}
+
+.header .container1 {
+    justify-content: space-between;
+}
+
+
+
+/* video */
+.parallax {
+    /* /* border: 3px solid yellow; */
+    background-color: black;
+}
+
+video{
+    margin-top: 5%;
+
+}
+
+/* menu */
+.navbar {
+    /* border: 3px solid blue; */
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    list-style: none;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 20px 30px 20px 20px;
+}
+
+.inicio{
+    color: #171fac;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #171fac;
+}
+
+.dropbtn {
+    background-color: black;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #00067e;
+    border-radius: 8px;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #00067e;
+    border-radius: 5px;
+  }
+
+
+/* banner */
+.banner {
+    /* border: 3px solid blue; */
+    background-color: black;
+    background-image: url(acess/Group\ 24.png);
+    padding: 90px 0;
+    height: 545vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.images{
+    /* border: 3px solid red; */
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    /* border: 3px solid yellow; */
+    display: flex;
+    margin-left: 1%;
+    font-size: 100px;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.decoration{
+    /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+}
+  
+.info{
+    /* border: 3px solid blue; */
+    font-size: 40px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.images2{
+    /* border: 3px solid red; */
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.images1{
+    /* border: 3px solid rgb(255, 255, 255); */
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text1{
+    /* border: 3px solid yellow; */
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 3%;
+    /* margin-left: 7%; */
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.decoration1{
+    /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+    margin-top:3%;
+}
+  
+.info1{
+    /* border: 3px solid blue; */
+    font-size: 40px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-left: 9%;
+    margin-top: 3%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.information{
+    margin-left: 4%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.images3{
+    /* border: 3px solid red; */
+    margin-top: 3%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text3{
+    /* border: 3px solid yellow; */
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 3%;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.decoration3{
+    /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+    margin-left: -5%;
+    margin-top: 3%;
+}
+  
+.info3{
+    /* border: 3px solid blue; */
+    font-size: 40px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/* caixas */
+.boxes {
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20%;
+}
+
+.boxes .container {
+    /* border: 3px solid red; */
+    height: 46vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.box {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-left: 18%;
+    margin-right: 18%;
+    background: white;
+    border-radius: 3em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box p {
+    font-family: 'Delius Unicase', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    margin-top: 20%;
+}
+
+.box img {
+    margin-top: 20%;
+    width: 100px;
+}
+
+
+
+/* musicas */
+.album {
+    /* border: 3px solid red; */
+    margin-top: 35%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.album .container {
+    width: 100%;
+    height: 90%;
+    border: 5px solid black;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}
+
+.album .container::-webkit-scrollbar {
+  width: 17px;
+  height: 17px;
+}
+.album .container::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.album .container::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 4px;
+}
+.album .container::-webkit-scrollbar-thumb:hover {
+  background: #251268;
+}
+.album .container::-webkit-scrollbar-thumb:active {
+  background: #140f57;
+}
+.album .container::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+.album .container::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+.album .container::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+.album .container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+.album .container h1 {
+    /* border: 3px solid orange; */
+    font-family: 'Radio Canada', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 80px;
+}
+
+
+.musica {
+    /* border: 3px solid purple; */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+.musica img {
+    /* border: 3px solid green; */
+    margin-left: 10%;
+    margin-right: 60px;
+    height: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.musica img {
+    transition: 0.3s;
+}
+
+.musica img:hover {
+    transform: scale(1.2);
+}
+
+.musica h2 {
+    /* border: 3px solid rgb(155, 11, 95); */
+    font-family: 'Anaheim', sans-serif;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+
+
+
+
+/* footer */
+.footer {
+    /* border: 3px solid green; */
+    display: flex;
+    margin: 20% 0 0 0;
+    width: 100%;
+    background: black;
+    background: linear-gradient(180deg, rgb(0, 0, 0)80.96%, rgb(9, 1, 116) 100%);
+}
+
+.footer .container {
+    /* border: 3px solid red; */
+    height: 130px;
+    width: 95%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .image {
+    /* border: 3px solid blue; */
+    display: flex;
+    margin: 4% 0% 4% 6%;
+}
+
+.image span img{
+    width: 78%;
+}
+
+
+.frase {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10%;
+}
+
+.frase .f1 {
+    font-size: 25px;
+    color: white;
+}
+
+.frase .f2 {
+    font-size: 18px;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}

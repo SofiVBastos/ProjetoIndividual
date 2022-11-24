@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat+Alternates:wght@300;400&family=Radio+Canada:wght@300&family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Bungee&family=Delius+Unicase&family=Gugi&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Delius+Unicase&family=Gugi&family=Jaldi:wght@700&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Do+Hyeon&family=Julius+Sans+One&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Do+Hyeon&family=Doppio+One&family=Julius+Sans+One&family=Rambla&family=Rubik+Mono+One&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Changa:wght@200&family=Convergence&family=Do+Hyeon&family=Doppio+One&family=Julius+Sans+One&family=Rambla&family=Rubik+Mono+One&family=Ubuntu+Condensed&display=swap');
+
+* {
+    margin: 0
+}
+
+body{
+    background-color: rgb(10, 10, 10);
+}
+
+/* barra inicial */
+.header {
+    width: 100%;
+    position: fixed;
+    /* border: 3px solid green; */
+    top: 0;
+    left: 0;
+    height: 12% auto;
+    background: black;
+    z-index: 2000;
+}
+
+.container1 {
+    /* border: 3px solid red; */
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+.container1 span img{
+    /* border: 3px solid green; */
+    width: 170px;
+    margin-top: 8%;
+}
+
+.header .container1 {
+    justify-content: space-between;
+}
+
+/* menu */
+.navbar {
+    /* border: 3px solid blue; */
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    list-style: none;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 15px;
+}
+.navbar li{
+margin-top: 5px;
+}
+
+.usuario{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.usuario p{
+    font-size: 15px;
+    margin-top: 10%;
+    margin-bottom: -7%;
+}
+
+
+.inicio{
+    color: #171fac;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #171fac;
+}
+
+.dropbtn {
+    background-color: black;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #00067e;
+    border-radius: 8px;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #00067e;
+    border-radius: 5px;
+  }
+
+
+ /* /////////////////////////////////// *//* /////////////////////////////////// */
+ .Seugmin {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 3%;
+    font-size: 40px;
+    margin-bottom: 2%;
+    text-decoration: underline;
+    color: white;
+}
+
+.imagem {
+    /* border: 3px solid green; */
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    flex-direction: row;
+}
+
+.texto {
+    /* border: 3px solid blue; */
+    margin-top: 6%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    color: white;
+    
+}
+
+.texto .titulo {
+    /* border: 3px solid orange; */
+    margin-bottom: 1%;
+    margin-left: 15%;
+    font-size: 50px;
+    width: 40%;
+    font-family: 'Doppio One', sans-serif;
+}
+
+
+.texto ul {
+    /* border: 3px solid; */
+    font-size: 18px;
+    padding: 10px;
+}
+
+.texto li {
+    margin-top: 2%;
+    list-style: none;
+    display: flex;
+    margin-left: 0%;
+    font-size: 20px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+
+/* /////////////////////////////////// */
+/* Informações */
+/* /////////////////////////////////// */
+.line {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.line2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.biografia {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+}
+
+.biografia .container {
+    /* border: 3px solid red; */
+    display: flex;
+    width: 80%;
+}
+
+.conteudo {
+    /* border: 3px solid blue; */
+    font-size: 60px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.conteudo h3 {
+    /* border: 3px solid red; */
+    margin-bottom: 3%;
+    font-family: 'Convergence', sans-serif;
+}
+
+.biografia .bio p {
+    color: white;
+    font-size: 30px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+/* /////////////////////////////////// */
+/* /////////////////////////////////// */
+.career {
+    /* border: 3px solid yellow; */
+    display: flex;
+}
+
+.carreira {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 3%;
+    font-size: 40px;
+    color: white;
+}
+
+.career h1{
+    font-family: 'Convergence', sans-serif;
+}
+
+.bc {
+    /* border: 3px solid green; */
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: row;
+}
+
+.info {
+    /* border: 3px solid blue; */
+    margin-left: 5%;
+    margin-top: 3%;
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    font-family: 'Rambla', sans-serif;
+
+}
+
+
+/* /////////////////////////////////// *//* /////////////////////////////////// */
+.footer {
+    /* border: 3px solid green; */
+    display: flex;
+    margin: 20% 0 0 0;
+    width: 100%;
+    background: black;
+    background: linear-gradient(180deg, rgb(0, 0, 0)80.96%, rgb(9, 1, 116) 100%);
+}
+
+.footer .container {
+    /* border: 3px solid red; */
+    height: 130px;
+    width: 95%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .image {
+    /* border: 3px solid blue; */
+    display: flex;
+    margin: 4% 2% 4% 6%;
+}
+
+.image span img{
+    width: 78%;
+}
+
+.inicio h6 {
+    /* border: 3px solid orange; */
+    font-family: 'Radio Canada', sans-serif;
+    margin-bottom: 70px;
+    color: white;
+    opacity: 0.5;
+}
+
+
+.frase {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15%;
+}
+
+.frase .f1 {
+    font-size: 25px;
+    color: white;
+}
+
+.frase .f2 {
+    font-size: 18px;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
