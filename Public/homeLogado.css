@@ -430,6 +430,119 @@ a:hover{
 }
 
 
+/* ///////////////////////////// comentario ///////////////////////// */
+
+.comentario {
+    /* border: 3px solid red; */
+    height: 400px;
+    margin: 15% 25% 10% 25%;
+}
+
+.comentario .container {
+    /* border: 3px solid blue; */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.tipo {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.umavez {
+    /* border: 3px solid green; */
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.title {
+    /* border: 3px solid orangered; */
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title input{
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.pose{
+/* border: 3px solid darkolivegreen; */
+display: flex;
+flex-direction: column;
+height: 200px;
+font-size: 20px;
+margin-top: 2%;
+}
+
+.pose textarea{
+    height: 200px;
+    font-size: 20px;
+}
+
+.description {
+    /* border: 3px solid mediumvioletred; */
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* CSS */
+.button-24 {
+    background: #120076;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-top: 2%;
+}
+
+.button-24:hover,
+.button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #1900a9;
+}
+
+.button-24:active {
+    opacity: .5;
+}
 
 /* footer */
 .footer {

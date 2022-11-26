@@ -33,7 +33,22 @@
                     <input type="password" id="ipt_confsenha" placeholder="confirmação da senha">
                 </div>
                 <h6><a href="login.html">Tenho uma conta</a> </h6>
-                <button onclick="cadastrar()"><a href="login.html">Cadastre-se</a></button>
+                <button onclick="cadastrar()">Cadastre-se</button>
+
+                <div class="carregamento" >
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="alerta_erro" style="display: none;">
+                    <div class="card_erro" id="cardErro">
+                        <span id="mensagem_erro">Não foi possivel realizar o cadastro</span>
+                    </div>
+                </div>
                 
             </div>
         </div>
@@ -43,7 +58,7 @@
 </html>
 <script>
      function cadastrar() {
-        aguardar();
+        // aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo

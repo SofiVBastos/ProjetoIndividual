@@ -14,12 +14,7 @@
 <body>
 
 
-    <div class="login"> 
-        <div class="alerta_erro">
-            <div class="card_erro" id="cardErro">
-                <span id="mensagem_erro">Login</span>
-            </div>
-        </div>
+    <div class="login">
         <div class="container">
             <div class="box">
                 <h1>Login</h1>
@@ -32,8 +27,23 @@
                 </div>
 
                 <h6><a href="cadastro.html">Não tenho uma conta</a> </h6>
-                <button onclick="cadastro()"><a href="homelogado.html">Entrar</a></button>
-                
+                <button onclick="entrar()">Entrar</button>
+
+                <div class="carregamento" >
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="alerta_erro" style="display: none;">
+                    <div class="card_erro" id="cardErro">
+                        <span id="mensagem_erro">Usuario não encontrado</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -42,19 +52,19 @@
 </html>
 <script>
     function entrar() {
-        aguardar();
+        // aguardar();
 
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
 
         if (emailVar == "" || senhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+            // cardErro.style.display = "block"
+            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            // finalizarAguardar();
             return false;
         }
         else {
-            setInterval(sumirMensagem, 5000)
+            // setInterval(sumirMensagem, 5000)
         }
 
         console.log("FORM LOGIN: ", emailVar);
@@ -84,29 +94,31 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "./homelogado.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
 
             } else {
-
+                var erro = document.getElementsByClassName(".alerta_erro")
+                erro.style = 'display: block'
                 console.log("Houve um erro ao tentar realizar o login!");
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
+                    // finalizarAguardar(texto);
                 });
             }
 
-        }).catch(function (erro) {
-            console.log(erro);
         })
+        // .catch(function (erro) {
+        //     console.log(erro);
+        // })
 
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
 </script>

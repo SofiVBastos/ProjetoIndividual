@@ -51,7 +51,7 @@
                     <li><a href="QUIZ.html">QUIZ</a></li>
 
                     <li>
-                        <a href="home.html">Logout</a>
+                        <a href="index.html">Logout</a>
                     </li>
 
                     <div class="usuario">
@@ -265,6 +265,32 @@
     </div>
 
 
+    <div class="comentario" id="coments" >
+        <div class="container">
+            <div class="tipo">
+                <h1>Comentário</h1>
+            </div>
+            <div class="umavez">
+                <h4>*Aviso: Você só pode comentar uma vez</h4>
+            </div>
+            <div class="title">
+                <h2>Titulo</h2>
+                <input name="titulo" id="titulo" maxlength="100" type="text">
+            </div>
+            <div class="description">
+                <div class="pose">
+                    <h2>Descrição</h2>
+                    <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
+                </div>
+                <div class="proximo-">
+                    <button onclick="send()" class="button-24" role="button">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="footer">
         <div class="container">
             <div class="image">
@@ -282,5 +308,72 @@
         </div>
     </div>
 </body>
+<script>
+    function publicar() {
+        var idUsuario = sessionStorage.ID_USUARIO;
 
+        var corpo = {
+            titulo: form_postagem.titulo.value,
+            descricao: form_postagem.descricao.value
+        }
+
+        fetch(`/avisos/publicar/${idUsuario}`, {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(corpo)
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Post realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
+                window.location = "/dashboard/mural.html";
+                limparFormulario();
+                finalizarAguardar();
+            } else if (resposta.status == 404) {
+                window.alert("Deu 404!");
+            } else {
+                throw ("Houve um erro ao tentar realizar a postagem! Código da resposta: " + resposta.status);
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+
+    }
+    function atualizarFeed() {
+        //aguardar();
+        fetch("/avisos/listar").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    
+
+                    mensagem.innerHTML = "Nenhum resultado encontrado."
+                    
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                    var feed = document.getElementById("feed_container");
+                    feed.innerHTML = "";
+                    
+                    console.log(resposta)
+
+                    finalizarAguardar();
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+            finalizarAguardar();
+        });
+    }
+</script>
 </html>
