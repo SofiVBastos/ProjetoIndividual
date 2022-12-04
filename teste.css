@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+.qualquecoisa{
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: ;
+}
+.qualquecoisa .container{
+border: 3px solid blue;
+display: flex;
+align-items: center;
+background-color: aqua;
+}
+
+.elemento{
+    color: white;
+}
