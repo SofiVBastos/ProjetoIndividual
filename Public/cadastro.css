@@ -26,7 +26,7 @@
 }
 
 .box {
-    /* border: 3px solid black; */
+    /* border: 3px solid rgb(249, 240, 240); */
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: center;
@@ -146,10 +146,10 @@ input:focus {
 }
 
 .alerta_erro{
-    /* border: 3px solid red; */
+    /* border: 3px solid red;  */
     margin-top: 10%;
     color: white;
-    font-size: 20px;
+    font-size: 12.5px;
     font-family: 'Changa', sans-serif;
 }
 

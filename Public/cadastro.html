@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    
+
     <link rel="stylesheet" href="cadastro.css">
     <link rel="kids icon" href="acess/image 26.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,8 @@
     <div class="cadastro">
         <div class="container">
             <div class="box">
+
+
                 <h1>Cadastro</h1>
                 <div class="campo1">
                     <input id="nome_input" placeholder="nome">
@@ -35,21 +37,29 @@
                 <h6><a href="login.html">Tenho uma conta</a> </h6>
                 <button onclick="cadastrar()">Cadastre-se</button>
 
-                <div class="carregamento" >
-                    <div class="lds-ellipsis">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div id="div_aguardar" class="loading-div" style="display: none;">
+                    <div class="carregamento">
+                        <div class="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="alerta_erro" style="display: none;">
-                    <div class="card_erro" id="cardErro">
-                        <span id="mensagem_erro">Não foi possivel realizar o cadastro</span>
+                <div id="div_erros_login">
+
+                </div>
+
+
+
+                <div class="alerta_erro">
+                    <div class="card_erro" id="cardErro" style="display: none;">
+                        <span id="mensagem_erro"></span>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -57,7 +67,8 @@
 
 </html>
 <script>
-     function cadastrar() {
+
+    function cadastrar() {
         // aguardar();
 
         //Recupere o valor da nova input pelo nome do id
@@ -69,11 +80,55 @@
         var confirmacaoSenhaVar = ipt_confsenha.value;
 
         if (nomeVar == "" || nicknameVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-           
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Preencha os campos";
+
+            return false;
+
+        }
+        else if (nomeVar.length < 3) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Nome invalido";
+            return false;
+        }
+        else if (nomeVar == !isNaN(nomeVar)) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Nome invalido";
+
+            return false;
+        }
+        else if (nicknameVar.length > 10) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Nickname só pode conter até 10 caracteres";
+
+            return false;
+        }
+        else if(emailVar.length < 15){
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Email tem que conter mais que 15 caracteres";
+
+            return false;
+        }
+        else if(senhaVar.length > 8){
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Senha tem que conter até 8 caracteres";
+
+            return false;
+        }
+        else if (confirmacaoSenhaVar != senhaVar) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "confirmação e senha não se coicidem";
+
+            return false;
+        }
+        else if (confirmacaoSenhaVar.length > 8) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "confirmação tem que conter até 8 caracteres";
+
             return false;
         }
         else {
-            // setInterval(sumirMensagem, 5000)
+            setInterval(sumirMensagem, 5000)
         }
 
         // Enviando o valor da nova input
@@ -95,14 +150,19 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                // cardErro.style.display = "block";
+                cardErro.style.display = "block";
 
-                // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso!";
 
                 setTimeout(() => {
+                    div_aguardar.style.display = "block"
+                }, "1000")
+
+                setTimeout(() => {
+                    div_aguardar.style.display = "block"
                     window.location = "login.html";
-                }, "2000")
-                
+                }, "5000")
+
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
@@ -111,6 +171,10 @@
         });
 
         return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
     }
 
 </script>

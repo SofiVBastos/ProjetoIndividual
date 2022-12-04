@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body onload="carregar()">
 
     <div class="parallax">
         <video src="acess/lv_0_20221107221410 (online-video-cutter.com).mp4" width="100%" height="100%" autoplay muted
@@ -333,7 +333,8 @@
 
             if (resposta.ok) {
                 window.alert("Post realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
-                
+                coments.style.display = "none"
+
             } else if (resposta.status == 404) {
                 window.alert("Deu 404!");
             } else {
@@ -347,7 +348,31 @@
 
     }
 
+    function carregar() {
+        var idUsuario = sessionStorage.ID_USUARIO;
 
+        fetch(`/comentario/desativar/${idUsuario}`).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                resposta.json().then(json => {
+                    if(json.length > 0){
+                        coments.style.display = "none"
+                    }else{
+
+                    }
+                })
+
+            } else if (resposta.status == 404) {
+                window.alert("Deu 404!");
+            } else {
+                throw ("Houve um erro ao tentar realizar a postagem! Código da resposta: " + resposta.status);
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+    }
 
 </script>
 

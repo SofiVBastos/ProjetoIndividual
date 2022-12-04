@@ -29,7 +29,7 @@
                 <h6><a href="cadastro.html">Não tenho uma conta</a> </h6>
                 <button onclick="entrar()">Entrar</button>
 
-                <div class="carregamento" >
+                <div id="div_aguardar" class="carregamento" style="display: none;">
                     <div class="lds-ellipsis">
                         <div></div>
                         <div></div>
@@ -38,9 +38,13 @@
                     </div>
                 </div>
 
+                <div id="div_erros_login">
+
+                </div>
+
                 <div class="alerta_erro" style="display: none;">
                     <div class="card_erro" id="cardErro">
-                        <span id="mensagem_erro">Usuario não encontrado</span>
+                        <span id="mensagem_erro"></span>
                     </div>
                 </div>
 
@@ -58,13 +62,19 @@
         var senhaVar = senha_input.value;
 
         if (emailVar == "" || senhaVar == "") {
-            // cardErro.style.display = "block"
-            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Preencha os campos";
             // finalizarAguardar();
             return false;
         }
+        else if(senhaVar.length > 8){
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Senha incorreta";
+
+            return false;
+        }
         else {
-            // setInterval(sumirMensagem, 5000)
+            setInterval(sumirMensagem, 5000)
         }
 
         console.log("FORM LOGIN: ", emailVar);
@@ -94,9 +104,14 @@
                     sessionStorage.ID_USUARIO = json.id;
                     sessionStorage.NICK_NAME = json.nickname;
 
+                    setTimeout(() => {
+                        div_aguardar.style.display = "block"
+                    }, "1000")
+
+
                     setTimeout(function () {
                         window.location = "./homelogado.html";
-                    }, 1000); // apenas para exibir o loading
+                    }, 3000); // apenas para exibir o loading
 
                 });
 
@@ -119,7 +134,7 @@
         return false;
     }
 
-    // function sumirMensagem() {
-    //     cardErro.style.display = "none"
-    // }
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
 </script>
