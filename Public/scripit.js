@@ -3,83 +3,205 @@ var pontos = 0;
 function start() {
   inicio.style.display = "none"
   pergunta1.style.display = "block"
-
 }
 
-function verificar_resposta(pergunta, resposta) {
+async function verificar_resposta(pergunta, resposta) {
   var pergunta_atual = document.getElementById(`pergunta${pergunta}`)
   var proxPergunta = document.getElementById(`pergunta${pergunta + 1}`)
 
   for (let i = 0; i < quizArray.length; i++) {
     if (quizArray[i].id == pergunta) {
       if (resposta == quizArray[i].correta) {
-        pontos++
+        pontos += 20
         alert("Acertou")
 
-      } else {
-        alert("Errou!")
-      }
-
-      if (pergunta == 10) {
         pergunta_atual.style.display = "none"
-        pont.style.display = "block"
+        
+        
+        if (quizArray[i].id != 5) {
+          proxPergunta.style.display = "block"
+        } else {
+          pont.style.display = "block"
+          
+        }
+        
+        console.log(pontos)
+        await update_pontuacao(pontos)
+        
+        
+      } else {
+        pontos -= 6
+
+        alert("Errou!")
+
+        pergunta_atual.style.display = "none"
+        
+
+        if (quizArray[i].id != 5) {
+          proxPergunta.style.display = "block"
+        } else {
+          pont.style.display = "block"  
+          
+
+        }
+
+        console.log(pontos)
+        await update_pontuacao(pontos)
 
       }
-      pergunta_atual.style.display = "none"
-      proxPergunta.style.display = "block"
     }
   }
+  
 }
 
 
-// function prox() {
-// pont.style.display = "none"
-// coments.style.display = "block"
-// }
+const update_pontuacao = async (pontuacao) => {
+  await fetch('/quiz/update-pontuacao', {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      idUser: Number(sessionStorage.getItem('ID_USUARIO')),
+      pontuacao: pontuacao
+    })
+  })
+}
+
+console.log(Number(sessionStorage.getItem('ID_USUARIO')))
 
 
-// function next(){
-//   grafic.style.display = "none"
-//   coments.style.display = "block"
-// }
+async function reload_ranking() {
+  const res = await get_top_5()
 
-// const ctx = document.getElementById('myChart');
+  top_5.innerHTML = ''
+
+  top_5.innerHTML += `
+
+<div class="dados7">
+  <div class="separar1">
+      <div class="container">
+        <span>1º</span>
+      </div>
+  </div>
+
+  <div class="separar2">
+      <div class="container">
+        <span>${res[0].nickname}</span>
+      </div>
+  </div>
+
+  <div class="separar3">
+    <div class="container">
+        <p>${res[0].pontuacao}</p>
+    </div>
+  </div>
+</div>
+
+  
+<div class="dados6">
+  <div class="separar1">
+    <div class="container">
+      <span>2º</span>
+    </div>
+  </div>
+
+  <div class="separar2">
+    <div class="container">
+        <span>${res[1].nickname}</span>
+    </div>
+  </div>
+
+  <div class="separar3">
+    <div class="container">
+        <p>${res[1].pontuacao}</p>
+    </div>
+  </div>
+</div>
 
 
-// new Chart(ctx, {
-//   type: 'bar',
-//   data: {
-//     labels: ['1', '2', '3', '4', '5',],
-//     datasets: [{
-//       label: 'Pontuação',
-//       data: [12, 19, 3, 5, 2],
-//       backgroundColor: [
-//         'rgba(144, 150, 255, 0.5)',
-//         'rgba(144, 150, 255, 0.5)',
-//         'rgba(144, 150, 255, 0.5)',
-//         'rgba(144, 150, 255, 0.5)',
-//         'rgba(144, 150, 255, 0.5)',
-//         'rgba(144, 150, 255, 0.5)',
-//         'rgba(144, 150, 255, 0.5)'
-//       ],
-//       borderColor: [
-//         '#3e45ccd6',
-//         '#3e45ccd6',
-//         '#3e45ccd6',
-//         '#3e45ccd6',
-//         '#3e45ccd6',
-//         '#3e45ccd6',
-//         '#3e45ccd6'
-//       ],
-//       borderWidth: 1
-//     }]
-//   },
-//   options: {
-//     scales: {
-//       y: {
-//         beginAtZero: true
-//       }
-//     }
-//   }
-// });
+<div class="dados7">
+
+  <div class="separar1">
+    <div class="container">
+        <span>3º</span>
+    </div>
+  </div>
+
+  <div class="separar2">
+    <div class="container">
+        <span>${res[2].nickname}</span>
+    </div>
+  </div>
+
+  <div class="separar3">
+    <div class="container">
+      <p>${res[2].pontuacao}</p>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="dados6">
+      <div class="separar1">
+          <div class="container">
+              <span>4º</span>
+          </div>
+      </div>
+      <div class="separar2">
+          <div class="container">
+              <span>${res[3].nickname}</span>
+          </div>
+      </div>
+      <div class="separar3">
+          <div class="container">
+              <p>${res[3].pontuacao}</p>
+          </div>
+      </div>
+  </div>
+
+<div class="dados7">
+      <div class="separar1">
+          <div class="container">
+              <span>5º</span>
+          </div>
+      </div>
+      <div class="separar2">
+          <div class="container">
+              <span>${res[4].nickname}</span>
+          </div>
+      </div>
+      <div class="separar3">
+          <div class="container">
+              <p>${res[4].pontuacao}</p>
+    </div>
+  </div>
+</div>
+
+<div class="linha7">
+  <div class="conter">
+    <button onclick="prox()" class="button-24" role="button">Próximo</button>
+  </div>
+</div>
+`
+
+
+}
+
+
+const get_top_5 = async () => {
+  const response = await fetch('/quiz/top-5', {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  return await response.json();
+}
+
+
+  setInterval( async () => {
+      await reload_ranking();
+  }, 2000);
 
