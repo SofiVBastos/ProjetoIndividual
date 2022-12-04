@@ -56,8 +56,8 @@
 
                     <div class="usuario">
                         <img src="acess/user(4) 1.png" alt="" style="height:40px;">
-                            <p>nome usuario</p>
-                    
+                        <p id="b_usuario"></p>
+
                     </div>
 
                 </ul>
@@ -68,7 +68,7 @@
     <div class="banner">
         <div class="container">
             <div class="images">
-                <img src="acess/image 29.png" alt="" >
+                <img src="acess/image 29.png" alt="">
                 <div class="text">
                     <span>20<br>17</span>
                 </div>
@@ -91,7 +91,7 @@
                     <span>20<br>18</span>
                 </div>
                 <div class="images1">
-                    <img src="acess/image 30.png" alt="" >
+                    <img src="acess/image 30.png" alt="">
                 </div>
             </div>
 
@@ -139,7 +139,8 @@
 
             <div class="information">
                 <div class="info3">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O COMEÇO DO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUCESSO</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O COMEÇO DO
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUCESSO</p>
                 </div>
                 <div class="decoration3">
                     <img src="acess/Vector 24.png" alt="">
@@ -265,7 +266,7 @@
     </div>
 
 
-    <div class="comentario" id="coments" >
+    <div class="comentario" id="coments">
         <div class="container">
             <div class="tipo">
                 <h1>Comentário</h1>
@@ -275,15 +276,15 @@
             </div>
             <div class="title">
                 <h2>Titulo</h2>
-                <input name="titulo" id="titulo" maxlength="100" type="text">
+                <input name="titulo" id="ipt_titulo" maxlength="100" type="text">
             </div>
             <div class="description">
                 <div class="pose">
                     <h2>Descrição</h2>
-                    <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
+                    <textarea name="descricao" id="ipt_descricao" maxlength="250" rows="5"></textarea>
                 </div>
                 <div class="proximo-">
-                    <button onclick="send()" class="button-24" role="button">Enviar</button>
+                    <button onclick="comentario()" class="button-24" role="button">Enviar</button>
                 </div>
             </div>
         </div>
@@ -309,15 +310,18 @@
     </div>
 </body>
 <script>
-    function publicar() {
+
+    b_usuario.innerHTML = sessionStorage.NICK_NAME;
+
+    function comentario() {
         var idUsuario = sessionStorage.ID_USUARIO;
 
         var corpo = {
-            titulo: form_postagem.titulo.value,
-            descricao: form_postagem.descricao.value
+            titulo: ipt_titulo.value,
+            descricao: ipt_descricao.value
         }
 
-        fetch(`/avisos/publicar/${idUsuario}`, {
+        fetch(`/comentario/comentar/${idUsuario}`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
@@ -329,9 +333,7 @@
 
             if (resposta.ok) {
                 window.alert("Post realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
-                window.location = "/dashboard/mural.html";
-                limparFormulario();
-                finalizarAguardar();
+                
             } else if (resposta.status == 404) {
                 window.alert("Deu 404!");
             } else {
@@ -339,41 +341,14 @@
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
         });
 
         return false;
 
     }
-    function atualizarFeed() {
-        //aguardar();
-        fetch("/avisos/listar").then(function (resposta) {
-            if (resposta.ok) {
-                if (resposta.status == 204) {
-                    
 
-                    mensagem.innerHTML = "Nenhum resultado encontrado."
-                    
-                    throw "Nenhum resultado encontrado!!";
-                }
 
-                resposta.json().then(function (resposta) {
-                    console.log("Dados recebidos: ", JSON.stringify(resposta));
 
-                    var feed = document.getElementById("feed_container");
-                    feed.innerHTML = "";
-                    
-                    console.log(resposta)
-
-                    finalizarAguardar();
-                });
-            } else {
-                throw ('Houve um erro na API!');
-            }
-        }).catch(function (resposta) {
-            console.error(resposta);
-            finalizarAguardar();
-        });
-    }
 </script>
+
 </html>
