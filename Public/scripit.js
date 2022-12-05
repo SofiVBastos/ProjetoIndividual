@@ -16,32 +16,32 @@ async function verificar_resposta(pergunta, resposta) {
         alert("Acertou")
 
         pergunta_atual.style.display = "none"
-        
-        
+
+
         if (quizArray[i].id != 5) {
           proxPergunta.style.display = "block"
         } else {
           pont.style.display = "block"
-          
+
         }
-        
+
         console.log(pontos)
         await update_pontuacao(pontos)
-        
-        
+
+
       } else {
         pontos -= 6
 
         alert("Errou!")
 
         pergunta_atual.style.display = "none"
-        
+
 
         if (quizArray[i].id != 5) {
           proxPergunta.style.display = "block"
         } else {
-          pont.style.display = "block"  
-          
+          pont.style.display = "block"
+
 
         }
 
@@ -51,7 +51,7 @@ async function verificar_resposta(pergunta, resposta) {
       }
     }
   }
-  
+
 }
 
 
@@ -201,7 +201,7 @@ const get_top_5 = async () => {
 }
 
 
-  setInterval( async () => {
-      await reload_ranking();
-  }, 2000);
+setInterval(async () => {
+  await reload_ranking();
+}, 2000);
 

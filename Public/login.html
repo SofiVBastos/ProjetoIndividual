@@ -42,8 +42,8 @@
 
                 </div>
 
-                <div class="alerta_erro" style="display: none;">
-                    <div class="card_erro" id="cardErro">
+                <div class="alerta_erro">
+                    <div class="card_erro" id="cardErro" style="display: none;">
                         <span id="mensagem_erro"></span>
                     </div>
                 </div>
@@ -64,8 +64,7 @@
         if (emailVar == "" || senhaVar == "" ) {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha os campos";
-
-            return false;
+            return false
 
         }
         else if(senhaVar.length > 8){
