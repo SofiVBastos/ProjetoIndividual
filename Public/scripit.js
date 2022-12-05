@@ -181,7 +181,7 @@ async function reload_ranking() {
 
 <div class="linha7">
   <div class="conter">
-    <button onclick="prox()" class="button-24" role="button">Próximo</button>
+    <button onclick="prox()" class="button-24" role="button"><a href="homelogado.html">Próximo</a></button>
   </div>
 </div>
 `

@@ -72,12 +72,12 @@ video{
     color: #171fac;
 }
 
-a{
+.navbar a{
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+.navbar a:hover{
     color: #171fac;
 }
 
@@ -405,12 +405,18 @@ a:hover{
     transform: scale(1.2);
 }
 
-.musica h2 {
+.musica h2{
     /* border: 3px solid rgb(155, 11, 95); */
     font-family: 'Anaheim', sans-serif;
     text-align: center;
     margin-top: 6%;
     margin-bottom: 8%;
+    text-decoration: none;
+}
+
+.musica a{
+    text-decoration: none;
+    color: #000000;
 }
 
 

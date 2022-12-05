@@ -88,12 +88,12 @@ margin-top: 5px;
     color: #171fac;
 }
 
-a{
+.navbar a{
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+.navbar a:hover{
     color: #171fac;
 }
 
@@ -429,6 +429,10 @@ a:hover{
     margin-bottom: 8%;
 }
 
+.musica a{
+    text-decoration: none;
+    color: #000000;
+}
 
 /* ///////////////////////////// comentario ///////////////////////// */
 

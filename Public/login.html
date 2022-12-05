@@ -26,7 +26,7 @@
                     <input type="password" id="senha_input" placeholder="senha">
                 </div>
 
-                <h6><a href="cadastro.html">Não tenho uma conta</a> </h6>
+                <h6><a href="cadastro.html">Não tenho uma conta</a></h6>
                 <button onclick="entrar()">Entrar</button>
 
                 <div id="div_aguardar" class="carregamento" style="display: none;">
@@ -61,11 +61,12 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
 
-        if (emailVar == "" || senhaVar == "") {
+        if (emailVar == "" || senhaVar == "" ) {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha os campos";
-            // finalizarAguardar();
+
             return false;
+
         }
         else if(senhaVar.length > 8){
             cardErro.style.display = "block"
